@@ -25,11 +25,24 @@ public class Lesson2 {
         }
 
         //Task 3
-
+        byte[] thirdArray = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        for (int i = 0; i < thirdArray.length; i++) {
+            if (thirdArray[i] < 6){
+                thirdArray[i] *= 2;
+            }
+        }
 
         //Task 4
+        int[][] squareArray = new int[8][8];
+        for (int i = 0; i < squareArray.length; i++) {
+            squareArray[i][i] = 1;
+            squareArray[i][squareArray.length - i - 1] = 1;
+        }
 
         //Task 5
+        int[] randomArray = {8, 7, 3, 9, 12, 78, 4, 15};
+        System.out.println(Arrays.stream(randomArray).min().getAsInt());
+        System.out.println(Arrays.stream(randomArray).max().getAsInt());
     }
 
     //Task 6
