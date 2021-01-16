@@ -1,6 +1,5 @@
 package com.geekbrains.j1.lesson02;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Lesson2 {
@@ -44,6 +43,9 @@ public class Lesson2 {
         System.out.println(Arrays.stream(randomArray).min().getAsInt());
         System.out.println(Arrays.stream(randomArray).max().getAsInt());
 
+        //testing zone for task 7:
+        int[] testArray = {0, 1, 2, 3, 4};
+        moveArray(testArray, -2);
     }
 
     //Task 6
@@ -67,8 +69,49 @@ public class Lesson2 {
         return false;
     }
 
-    //Task 7
+    //Task 7 (If positive n - shift right)
     public static void moveArray(int[] inputArray, int n){
+        // Checking empty shift and one element array
+        if (n == 0 || inputArray.length == 1) {
+            System.out.println("Nothing to do...");
+            return;
+        }
 
+        System.out.printf("Original array: %s\n", Arrays.toString(inputArray));
+        int buf;    //storing template element
+
+        // Negative shift
+        if (n < 0){
+            for (int k = 1; k <= Math.abs(n); k++) {
+                for (int i = 1; i < inputArray.length; i++) {
+                    buf = inputArray[i];
+                    if (i != inputArray.length - 1){
+                        inputArray[i] = inputArray[i + 1];
+                        inputArray[i + 1] = buf;
+                    }
+                    else {
+                        inputArray[i] = inputArray[0];
+                        inputArray[0] = buf;
+                    }
+                }
+            }
+        }
+
+        // Positive shift
+        else {
+            for (int k = 1; k <= Math.abs(n); k++) {
+                for (int i = inputArray.length - 2; i >= 0; i--) {
+                    buf = inputArray[i];
+                    if (i != 0) {
+                        inputArray[i] = inputArray[i - 1];
+                        inputArray[i - 1] = buf;
+                    } else {
+                        inputArray[i] = inputArray[inputArray.length - 1];
+                        inputArray[inputArray.length - 1] = buf;
+                    }
+                }
+            }
+        }
+        System.out.printf("   Final array: %s\n", Arrays.toString(inputArray));
     }
 }
