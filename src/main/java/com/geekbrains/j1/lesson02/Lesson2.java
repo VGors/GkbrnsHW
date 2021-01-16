@@ -43,11 +43,28 @@ public class Lesson2 {
         int[] randomArray = {8, 7, 3, 9, 12, 78, 4, 15};
         System.out.println(Arrays.stream(randomArray).min().getAsInt());
         System.out.println(Arrays.stream(randomArray).max().getAsInt());
+
     }
 
     //Task 6
     public static boolean chekBalance(int[] inputArray){
-        return true;
+        int sum1 = 0, sum2 = 0;
+        for (int i = 0; i < inputArray.length - 1; i++) {
+            // Суммируется левая часть массива:
+            for (int j = 0; j < i + 1; j++) {
+                sum1 += inputArray[j];
+            }
+            // Суммируется правая часть массива:
+            for (int j = i + 1; j < inputArray.length; j++) {
+                sum2 += inputArray[j];
+            }
+            // Проверка на равенство:
+            if (sum1 == sum2){
+                return true;
+            }
+            sum1 = sum2 = 0;
+        }
+        return false;
     }
 
     //Task 7
