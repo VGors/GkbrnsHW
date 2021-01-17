@@ -10,7 +10,7 @@ public class Lesson3
         Scanner readUsersWord = new Scanner(System.in);
         System.out.println("Guess the word:");
         while (true){
-            String usersWord = readUsersWord.next().toLowerCase();  //reducing errors
+            String usersWord = readUsersWord.next().toLowerCase();
             if (compWord.equals(usersWord)){
                 System.out.println("Congratulation! You won!");
                 break;
@@ -31,33 +31,27 @@ public class Lesson3
                 "kiwi", "mango", "mushroom", "nut", "olive", "pea", "peanut", "pear",
                 "pepper", "pineapple", "pumpkin", "potato"};
         Random random = new Random();
-        int range = random.nextInt(24);
+        int range = random.nextInt(words.length - 1);
         return words[range];
     }
 
     // Comparing words
     public static String compareWords(String original, String usWord){
-        String template = "";   //resulting string
-        int length;             //range of checking
-        if (original.length() <= usWord.length()){
-            length = original.length();
-        }
-        else {
-            length = usWord.length();
-        }
+        StringBuilder template = new StringBuilder();               //resulting string
+        int length = Math.min(original.length(), usWord.length());  //range of checking
+
         for (int i = 0; i < length; i++) {
             if (original.charAt(i) == usWord.charAt(i)){
-                template += original.charAt(i);
+                template.append(original.charAt(i));
             } else {
-                template += "#";
+                template.append("#");
             }
         }
 
         //Fill last "#" symbols up to 15
         for (int i = template.length(); i < 15 ; i++) {
-            template += "#";
+            template.append("#");
         }
-        return template;
+        return template.toString();
     }
-
 }
