@@ -57,6 +57,6 @@ public class Lesson3
         for (int i = template.length(); i < 15 ; i++) {
             template += "#";
         }
-        return template.toString();
+        return template;
     }
 }
