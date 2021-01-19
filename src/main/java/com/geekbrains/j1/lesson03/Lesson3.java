@@ -37,7 +37,7 @@ public class Lesson3
 
     // Comparing words
     public static String compareWords(String original, String usWord){
-        StringBuilder template = new StringBuilder();               //resulting string
+        String template = "";               //resulting string
         int length;  //range of checking
         if (original.length() <= usWord.length()){
             length = original.length();
@@ -47,15 +47,15 @@ public class Lesson3
 
         for (int i = 0; i < length; i++) {
             if (original.charAt(i) == usWord.charAt(i)){
-                template.append(original.charAt(i));
+                template += original.charAt(i);
             } else {
-                template.append("#");
+                template += "#";
             }
         }
 
         //Fill last "#" symbols up to 15
         for (int i = template.length(); i < 15 ; i++) {
-            template.append("#");
+            template += "#";
         }
         return template.toString();
     }
