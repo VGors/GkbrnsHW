@@ -21,7 +21,8 @@ public class Lesson1 {
 
     // Task 4
     public static boolean isInRange(int n1, int n2){
-        if (n1 + n2 >= 10 && n1 + n2 <= 20) {
+        int sum = n1 + n2;
+        if (sum >= 10 && sum <= 20) {
             return true;
         }
         return false;
@@ -50,9 +51,14 @@ public class Lesson1 {
 
     // Task 8
     public static void isLeapYear (int year){
-        if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+        if (year % 400 == 0){
             System.out.println("Leap-year");
+        }else if (year % 100 == 0){
+            System.out.println("Not leap-year");
+        }else if (year % 4 == 0){
+            System.out.println("Leap-year");
+        }else {
+            System.out.println("Not leap-year");
         }
-        else System.out.println("Not leap-year");
     }
 }
