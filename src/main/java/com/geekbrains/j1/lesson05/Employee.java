@@ -22,11 +22,11 @@ public class Employee {
     }
 
     public void getDetailInfo(){
-        System.out.printf("\n%s\n", fio);
-        System.out.printf("post:   %s\n", post);
-        System.out.printf("e-mail: %s\n", email);
-        System.out.printf("phone:  %s\n", phone);
-        System.out.printf("salary: %f$\n", salary);
-        System.out.printf("age:    %d\n", age);
+        System.out.printf("\n%s\n", this.fio);
+        System.out.printf("post:   %s\n", this.post);
+        System.out.printf("e-mail: %s\n", this.email);
+        System.out.printf("phone:  %s\n", this.phone);
+        System.out.printf("salary: %f$\n", this.salary);
+        System.out.printf("age:    %d\n", this.age);
     }
 }
