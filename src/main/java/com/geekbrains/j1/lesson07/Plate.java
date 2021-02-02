@@ -18,13 +18,13 @@ public class Plate {
     }
 
     //    Decrease food from plate
-    public boolean eatFood(int quantity, Cat eatingCat) {
-        if (quantity > food) {
+    public boolean eatFood(Cat eatingCat) {
+        if (eatingCat.getAppetite() > food) {
             System.out.printf("Cat \u001B[31m%s\u001B[0m can't eat - not enough food =(\n", eatingCat.getName());
             return false;
         }
         else {
-            food -= quantity;
+            food -= eatingCat.getAppetite();
             System.out.printf("Cat \u001B[32m%s\u001B[0m have ate successful =)\n", eatingCat.getName());
             return true;
         }

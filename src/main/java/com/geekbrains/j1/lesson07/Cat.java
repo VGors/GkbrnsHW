@@ -13,7 +13,7 @@ public class Cat {
     //   Cat eats
     public void eat(Plate plate) {
         if (!satiety) {
-            if (plate.eatFood(appetite, this)) {
+            if (plate.eatFood(this)) {
                 satiety = true;
             }
         } else {
@@ -28,5 +28,9 @@ public class Cat {
 
     public boolean isSatiety() {
         return satiety;
+    }
+
+    public int getAppetite() {
+        return appetite;
     }
 }
