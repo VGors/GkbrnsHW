@@ -7,6 +7,7 @@ public class Lesson06 {
         Cat myFirstCat = new Cat("Baton");
         Cat mySecondCat = new Cat("Vaska");
         Dog myFirstDog = new Dog("Briket");
+        Animal myAnimal = new Animal("Corn");
 
         myFirstCat.swimAnimal(23);
         myFirstCat.runAnimal(34);
