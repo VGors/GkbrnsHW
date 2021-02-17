@@ -36,6 +36,7 @@ public class Lesson02 {
                 try {
                     sum += Integer.parseInt(sourceArray[i][j]);
                 } catch (NumberFormatException e) {
+                    System.out.println("Sum before error: " + sum);
                     throw new MyArrayDataException("Wrong symbol in the cell [" + i + ", " + j + "]");
                 }
             }
