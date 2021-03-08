@@ -17,8 +17,6 @@ public class ServerEngine {
         return this.aService;
     }
 
-    ;
-
     public ServerEngine() {
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
             aService = new AuthServiceImpl();
