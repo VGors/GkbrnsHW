@@ -1,4 +1,8 @@
+README.md
+GkbrnsHW.iml
+pom.xml
 .idea/*
 out/*
-GkbrnsHW.iml
-/target/
+target/*
+
+
