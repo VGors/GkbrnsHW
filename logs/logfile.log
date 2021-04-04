@@ -1,0 +1,43 @@
+INFO  2021-04-04 00:46:47 [main] com.geekbrains.j3.lesson_06.task_01.MainClass (MainClass.java:40) - ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Подготовка!!!
+WARN  2021-04-04 00:46:47 [pool-1-thread-2] com.geekbrains.j3.lesson_06.task_01.Car (Car.java:42) - Участник #2 готовится
+WARN  2021-04-04 00:46:47 [pool-1-thread-4] com.geekbrains.j3.lesson_06.task_01.Car (Car.java:42) - Участник #4 готовится
+WARN  2021-04-04 00:46:47 [pool-1-thread-1] com.geekbrains.j3.lesson_06.task_01.Car (Car.java:42) - Участник #1 готовится
+WARN  2021-04-04 00:46:47 [pool-1-thread-3] com.geekbrains.j3.lesson_06.task_01.Car (Car.java:42) - Участник #3 готовится
+INFO  2021-04-04 00:46:48 [pool-1-thread-2] com.geekbrains.j3.lesson_06.task_01.Car (Car.java:46) - Участник #2 готов
+INFO  2021-04-04 00:46:48 [pool-1-thread-1] com.geekbrains.j3.lesson_06.task_01.Car (Car.java:46) - Участник #1 готов
+INFO  2021-04-04 00:46:48 [pool-1-thread-3] com.geekbrains.j3.lesson_06.task_01.Car (Car.java:46) - Участник #3 готов
+INFO  2021-04-04 00:46:48 [pool-1-thread-4] com.geekbrains.j3.lesson_06.task_01.Car (Car.java:46) - Участник #4 готов
+WARN  2021-04-04 00:46:48 [pool-1-thread-1] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:19) - Участник #1 начал этап: Дорога 60 метров
+WARN  2021-04-04 00:46:48 [pool-1-thread-4] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:19) - Участник #4 начал этап: Дорога 60 метров
+WARN  2021-04-04 00:46:48 [pool-1-thread-3] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:19) - Участник #3 начал этап: Дорога 60 метров
+WARN  2021-04-04 00:46:48 [pool-1-thread-2] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:19) - Участник #2 начал этап: Дорога 60 метров
+INFO  2021-04-04 00:46:48 [main] com.geekbrains.j3.lesson_06.task_01.MainClass (MainClass.java:44) - ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка началась!!!
+INFO  2021-04-04 00:46:50 [pool-1-thread-2] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:21) - Участник #2 закончил этап: Дорога 60 метров
+INFO  2021-04-04 00:46:50 [pool-1-thread-1] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:21) - Участник #1 закончил этап: Дорога 60 метров
+INFO  2021-04-04 00:46:50 [pool-1-thread-4] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:21) - Участник #4 закончил этап: Дорога 60 метров
+WARN  2021-04-04 00:46:50 [pool-1-thread-1] com.geekbrains.j3.lesson_06.task_01.Tunnel (Tunnel.java:21) - Участник #1 готовится к этапу(ждет): Тоннель 80 метров
+WARN  2021-04-04 00:46:50 [pool-1-thread-2] com.geekbrains.j3.lesson_06.task_01.Tunnel (Tunnel.java:21) - Участник #2 готовится к этапу(ждет): Тоннель 80 метров
+WARN  2021-04-04 00:46:50 [pool-1-thread-4] com.geekbrains.j3.lesson_06.task_01.Tunnel (Tunnel.java:21) - Участник #4 готовится к этапу(ждет): Тоннель 80 метров
+INFO  2021-04-04 00:46:50 [pool-1-thread-1] com.geekbrains.j3.lesson_06.task_01.Tunnel (Tunnel.java:23) - Участник #1 начал этап: Тоннель 80 метров
+INFO  2021-04-04 00:46:50 [pool-1-thread-2] com.geekbrains.j3.lesson_06.task_01.Tunnel (Tunnel.java:23) - Участник #2 начал этап: Тоннель 80 метров
+INFO  2021-04-04 00:46:51 [pool-1-thread-3] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:21) - Участник #3 закончил этап: Дорога 60 метров
+WARN  2021-04-04 00:46:51 [pool-1-thread-3] com.geekbrains.j3.lesson_06.task_01.Tunnel (Tunnel.java:21) - Участник #3 готовится к этапу(ждет): Тоннель 80 метров
+INFO  2021-04-04 00:46:52 [pool-1-thread-2] com.geekbrains.j3.lesson_06.task_01.Tunnel (Tunnel.java:28) - Участник #2 закончил этап: Тоннель 80 метров
+WARN  2021-04-04 00:46:52 [pool-1-thread-2] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:19) - Участник #2 начал этап: Дорога 40 метров
+INFO  2021-04-04 00:46:52 [pool-1-thread-4] com.geekbrains.j3.lesson_06.task_01.Tunnel (Tunnel.java:23) - Участник #4 начал этап: Тоннель 80 метров
+INFO  2021-04-04 00:46:53 [pool-1-thread-1] com.geekbrains.j3.lesson_06.task_01.Tunnel (Tunnel.java:28) - Участник #1 закончил этап: Тоннель 80 метров
+WARN  2021-04-04 00:46:53 [pool-1-thread-1] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:19) - Участник #1 начал этап: Дорога 40 метров
+INFO  2021-04-04 00:46:53 [pool-1-thread-3] com.geekbrains.j3.lesson_06.task_01.Tunnel (Tunnel.java:23) - Участник #3 начал этап: Тоннель 80 метров
+INFO  2021-04-04 00:46:53 [pool-1-thread-2] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:21) - Участник #2 закончил этап: Дорога 40 метров
+INFO  2021-04-04 00:46:53 [pool-1-thread-2] com.geekbrains.j3.lesson_06.task_01.Car (Car.java:55) - Участник #2 have finished! - 1 место.
+INFO  2021-04-04 00:46:54 [pool-1-thread-1] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:21) - Участник #1 закончил этап: Дорога 40 метров
+INFO  2021-04-04 00:46:54 [pool-1-thread-4] com.geekbrains.j3.lesson_06.task_01.Tunnel (Tunnel.java:28) - Участник #4 закончил этап: Тоннель 80 метров
+WARN  2021-04-04 00:46:54 [pool-1-thread-4] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:19) - Участник #4 начал этап: Дорога 40 метров
+INFO  2021-04-04 00:46:54 [pool-1-thread-1] com.geekbrains.j3.lesson_06.task_01.Car (Car.java:55) - Участник #1 have finished! - 2 место.
+INFO  2021-04-04 00:46:55 [pool-1-thread-4] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:21) - Участник #4 закончил этап: Дорога 40 метров
+INFO  2021-04-04 00:46:55 [pool-1-thread-4] com.geekbrains.j3.lesson_06.task_01.Car (Car.java:55) - Участник #4 have finished! - 3 место.
+INFO  2021-04-04 00:46:57 [pool-1-thread-3] com.geekbrains.j3.lesson_06.task_01.Tunnel (Tunnel.java:28) - Участник #3 закончил этап: Тоннель 80 метров
+WARN  2021-04-04 00:46:57 [pool-1-thread-3] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:19) - Участник #3 начал этап: Дорога 40 метров
+INFO  2021-04-04 00:46:59 [pool-1-thread-3] com.geekbrains.j3.lesson_06.task_01.Road (Road.java:21) - Участник #3 закончил этап: Дорога 40 метров
+INFO  2021-04-04 00:46:59 [pool-1-thread-3] com.geekbrains.j3.lesson_06.task_01.Car (Car.java:55) - Участник #3 have finished! - 4 место.
+INFO  2021-04-04 00:46:59 [main] com.geekbrains.j3.lesson_06.task_01.MainClass (MainClass.java:47) - ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка закончилась!!!
