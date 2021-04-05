@@ -1,0 +1,35 @@
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+<Properties>
+    <Property name="basePath">logs</Property>
+</Properties>
+
+<Appenders>
+    <File name="rootFile" fileName="${basePath}/logfile.log" append="true">
+        <PatternLayout pattern="%-5p %d{yyyy-MM-dd HH:mm:ss} [%t] %C (%F:%L) - %m%n" />
+    </File>
+    <File name="MainClassFile" fileName="${basePath}/MainClass_log.log" append="true">
+        <PatternLayout pattern="%-5p %d{yyyy-MM-dd HH:mm:ss} [%t] %C (%F:%L) - %m%n" />
+    </File>
+    <File name="CarFile" fileName="${basePath}/Car_log.log" append="true">
+        <PatternLayout pattern="%-5p %d{yyyy-MM-dd HH:mm:ss} [%t] %C (%F:%L) - %m%n" />
+    </File>
+    <Console name="STDOUT" target="SYSTEM_OUT">
+        <PatternLayout pattern="%-5p %d{yyyy-MM-dd HH:mm:ss} - %m%n" />
+    </Console>
+</Appenders>
+
+<Loggers>
+    <Logger name="com.geekbrains.j3.lesson_06.task_01.MainClass" level="info">
+        <AppenderRef ref="STDOUT" />
+        <AppenderRef ref="MainClassFile" />
+    </Logger>
+    <Logger name="com.geekbrains.j3.lesson_06.task_01.Car" level="debug">
+        <AppenderRef ref="STDOUT" />
+        <AppenderRef ref="CarFile" />
+    </Logger>
+    <Root level="info">
+        <AppenderRef ref="STDOUT" />
+        <AppenderRef ref="rootFile" />
+    </Root>
+</Loggers>
+</Configuration>
